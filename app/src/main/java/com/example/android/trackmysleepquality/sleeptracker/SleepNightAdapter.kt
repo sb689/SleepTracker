@@ -21,16 +21,11 @@ class SleepNightAdapter:  ListAdapter<SleepNight, SleepNightAdapter.ViewHolder>(
         holder.bind(item)
     }
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder.from(parent)
-
     }
 
-
     class ViewHolder private constructor(val binding: ListItemSleepNightBinding): RecyclerView.ViewHolder(binding.root){
-
-
 
         fun bind( item: SleepNight) {
             val res: Resources = binding.root.resources
